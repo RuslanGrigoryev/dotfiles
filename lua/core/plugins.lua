@@ -31,10 +31,10 @@ return require('packer').startup(function(use)
   }
   use {'neoclide/coc.nvim', branch = 'release'}
   use {'reasonml-editor/vim-reason-plus'}
-
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+  use {
+    "kdheepak/lazygit.nvim",
+    requires = {{ 'nvim-lua/plenary.nvim'} },
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
