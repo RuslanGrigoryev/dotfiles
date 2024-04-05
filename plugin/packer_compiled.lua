@@ -119,6 +119,12 @@ _G.packer_plugins = {
     path = "/Users/ruslanhryhoriev/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/ruslanhryhoriev/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/ruslanhryhoriev/.local/share/nvim/site/pack/packer/start/packer.nvim",
