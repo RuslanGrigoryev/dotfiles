@@ -37,6 +37,13 @@ return require('packer').startup(function(use)
     "kdheepak/lazygit.nvim",
     requires = {{ 'nvim-lua/plenary.nvim'} },
   }
+  use {
+    'numToStr/Comment.nvim',
+    -- https://github.com/numToStr/Comment.nvim?tab=readme-ov-file#-usage
+    config = function()
+        require('Comment').setup()
+    end
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
