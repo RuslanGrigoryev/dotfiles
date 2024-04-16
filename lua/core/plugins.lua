@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
         require('Comment').setup()
     end
   }
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
