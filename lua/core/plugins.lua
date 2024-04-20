@@ -38,6 +38,8 @@ return require('packer').startup(function(use)
     "kdheepak/lazygit.nvim",
     requires = {{ 'nvim-lua/plenary.nvim'} },
   }
+  -- to comment/uncomment:
+  -- g c c 
   use {
     'numToStr/Comment.nvim',
     -- https://github.com/numToStr/Comment.nvim?tab=readme-ov-file#-usage
@@ -45,6 +47,9 @@ return require('packer').startup(function(use)
         require('Comment').setup()
     end
   }
+  -- best way to use it via Telescope
+  -- <leader> f b (find buffer)
+  -- or <leader> n  where n is a buffer number starting from 1
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- Automatically set up your configuration after cloning packer.nvim
